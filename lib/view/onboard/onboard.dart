@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:foody/view/recipe/recipe.dart';
+import 'package:foody/view/home.dart';
+import 'package:foody/view/recipe/component.dart';
 
 import '../../Reusable/customwidget.dart';
 
@@ -67,7 +68,11 @@ class Onboard extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                           onTap: () {
-                            print('start c ');
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Component()),
+                            );
                           }),
                     ),
                   ),
